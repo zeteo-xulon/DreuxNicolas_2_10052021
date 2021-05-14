@@ -1,3 +1,16 @@
+/* ====== STYLE GENERAL ======= */
+@font-face {
+  font-family: Raleway;
+  src: url(Fonts/Raleway-Italic-VariableFont_wght.ttf);
+  src: url(Fonts/Raleway-VariableFont_wght.ttf);
+}
+*{
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+/*======== STYLE ============ */
+
+
 .activity{
   display: flex;
 }
