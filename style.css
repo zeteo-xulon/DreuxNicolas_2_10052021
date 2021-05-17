@@ -10,20 +10,11 @@
 .margin-box{
   margin: 2vw;
 }
-/*======== STYLE ============ */
 
-
-.activity{
-  display: flex;
-}
-
-.pic-old-port{
-  background: url(images/activites/3_medium/reno-laithienne-vieux-port.jpg) left / 100%;
-  width: 300px;
-}
 /* ========== HEADER ============ */
 
 /* == NAV ==*/
+
 nav{
   display: flex;
   justify-content: flex-end;
@@ -95,31 +86,29 @@ nav a:hover{
 }
 
 /* == FILTER == */
+.filtres{
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  font-weight: bold;
+
+}
 .filtres__list{
-  display:flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-left: 0px;
-  font-weight: bolder;
+  display: flex;
+  flex-flow: wrap;
 }
-.filtres__list p {
-  border: 5px solid #F2F2F2;
-}
-.filtres img{
-  background: #DEEBFF;
-  border-radius: 100%;
+.filtres__btn{
+  border: 3px solid #F2F2F2;
   padding: 10px;
-  filter: hue-rotate(123.123.123);
+  margin-right: 2vw;
+  border-radius: 30px;
+}
+.filtres__btn img{
+  background-color: #DEEBFF;
+ z-index: 2;
 }
 
-.filtres__info-image {
-  border: 3px solid #F2F2F2;
-  border-radius: 100%;
-  padding: 2px;
-}
-.filtres__texte-informatif{
-  font-size: 0.7em;
-}
+
 
 /* ========== SECTION POPULAR ========== */
 
@@ -131,7 +120,14 @@ nav a:hover{
 
 /* ========== SECTION ACTIVITY ========= */
 
+.activity{
+  display: flex;
+}
 
+.pic-old-port{
+  background: url(images/activites/3_medium/reno-laithienne-vieux-port.jpg) left / 100%;
+  width: 300px;
+}
 
 /* =========== FOOTER=========== */
 
