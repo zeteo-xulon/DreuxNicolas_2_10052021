@@ -11,6 +11,18 @@
   margin: 2vw;
 }
 
+/* -+-+- COLOR THEME -+-+- */
+.blue{
+  color:#0065FC
+}
+.lightblue{
+  color: #DEEBFF;
+}
+.gray{
+  color: #F2F2F2;
+}
+
+
 /* ========== HEADER ============ */
 
 /* == NAV ==*/
@@ -33,7 +45,7 @@ nav a{
 nav a:hover{
   border-top: 3px solid #0065FC;
   color: #0065FC;
-  padding-top: 2.7vw;
+  padding-top: 3vw;
 }
 .nav__inscription a{
   color: #0065FC;
@@ -88,27 +100,55 @@ nav a:hover{
 /* == FILTER == */
 .filtres{
   display: flex;
-  flex-flow: wrap;
   align-items: center;
-  font-weight: bold;
-
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+.filtres__title{
+  font-size: 1em;
+  margin-right: 3vw;
 }
 .filtres__list{
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row wrap;
 }
+/*= FIlTER BUTTON = */
 .filtres__btn{
+  display: flex;
+  align-items: center;
   border: 3px solid #F2F2F2;
-  padding: 10px;
-  margin-right: 2vw;
+  border-left: #DEEBFF;
   border-radius: 30px;
+  margin-right: 10px;
+  height: 29px;
 }
-.filtres__btn img{
+.btn__img{
+  z-index: 2;
   background-color: #DEEBFF;
- z-index: 2;
+  color: #0065FC;
+  padding: 10px;
+  margin-right: 7px;
+  width: 14px;
+  border-radius: 100%;
+  text-align: center;
 }
+.btn__text{
+  padding-right: 15px;
+}
+/* == INFORMATION == */
 
-
+.filtres__info{
+  text-align: center;
+  color: #0065FC;
+  border: 3px solid #DEEBFF;
+  border-radius: 100%;
+  width: 9px;
+  padding: 3px;
+  font-size: 0.8em;
+}
+.filtres__info-text{
+  font-size: 0.7em;
+}
 
 /* ========== SECTION POPULAR ========== */
 
