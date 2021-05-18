@@ -132,9 +132,14 @@ nav a:hover{
   border-radius: 100%;
   text-align: center;
 }
+.btn__img:hover{
+  background-color: #0065FC;
+  color: #DEEBFF;
+}
 .btn__text{
   padding-right: 15px;
 }
+
 /* == INFORMATION == */
 
 .filtres__info{
@@ -150,12 +155,58 @@ nav a:hover{
   font-size: 0.7em;
 }
 
+/* ========= POPULAR & LODGING ========= */
+
+.popular-lodging{
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  background-color: lightpink; 
+}
+
 /* ========== SECTION POPULAR ========== */
-
-
+.popular{
+  display: flex;
+  flex-shrink: 1;
+  flex-flow: column nowrap;
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin-left: 2vh;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px lightgray;
+}
+.card-popular{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px;
+  
+}
+.card-popular__img{
+  height: 50px;
+  width: 50px;
+}
+.card__title{
+  font-size: 0.8em;
+  margin-left: 2vh;
+}
+.card__text{
+  font-size: 0.7em;
+  font-weight: normal;
+}
 
 /* ======= SECTION LODGING ========== */
-
+.lodging{
+  display: flex;
+  flex-shrink: 3;
+  flex-flow: row nowrap;
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin-left: 2vh;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px lightgray;
+}
 
 
 /* ========== SECTION ACTIVITY ========= */
