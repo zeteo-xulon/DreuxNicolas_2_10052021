@@ -21,8 +21,25 @@
 .gray{
   color: #F2F2F2;
 }
-
-
+.fa-star{
+  margin-left: 2vh;
+  height: 8px;
+  width: 8px;
+}
+/* -+-+- GENERAL FONT -+-+-*/
+.title{
+  font-size: 1em;
+  font-weight: bolder;
+}
+.card__title{
+  font-size: 0.8em;
+  margin-left: 2vh;
+}
+.card__text{
+  font-size: 0.7em;
+  margin-left: 2vh;
+  font-weight: normal;
+}
 /* ========== HEADER ============ */
 
 /* == NAV ==*/
@@ -45,7 +62,7 @@ nav a{
 nav a:hover{
   border-top: 3px solid #0065FC;
   color: #0065FC;
-  padding-top: 3vw;
+  padding-top: 2.5vw;
 }
 .nav__inscription a{
   color: #0065FC;
@@ -58,12 +75,7 @@ nav a:hover{
   margin-top: -5vw;
 }
 .head__logo{
-  margin-left: -2vw;
-}
-
-.head__main-title{
-  font-size: 1em;
-
+  margin-left: -2vh;
 }
 .head__subtitle{
   font-size: 0.8em;
@@ -165,63 +177,82 @@ nav a:hover{
 /* ========== SECTION POPULAR ========== */
 .popular{
   display: flex;
-  flex-shrink: 1;
   flex-flow: column nowrap;
   background-color: #F2F2F2;
-  padding: 10px;
-  margin-left: 2vh;
+  max-width: 30%;
+  padding: 1.7vw;
+  margin-left: 2vw;
   border-radius: 20px;
   box-shadow: 2px 3px 5px lightgray;
 }
 .card-popular{
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  margin: 10px;
-  
+  margin-top: 2vh;
+
+}
+.popular__title-chart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .card-popular__img{
-  height: 50px;
-  width: 50px;
+  height: 100%;
+  width: 35%;
+  object-fit:cover;
+  border-radius: 20px 0px 0px 20px;
 }
-.card__title{
-  font-size: 0.8em;
-  margin-left: 2vh;
-}
-.card__text{
-  font-size: 0.7em;
-  font-weight: normal;
-}
+
 
 /* ======= SECTION LODGING ========== */
 .lodging{
   display: flex;
-  flex-shrink: 3;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  justify-content: space-around;
   background-color: #F2F2F2;
   padding: 10px;
-  margin-left: 2vh;
   border-radius: 20px;
   box-shadow: 2px 3px 5px lightgray;
 }
-.card-lodging__img{
-  height: 50px;
-  width: 50px;
+.card-box{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.lodging-card{
+  background: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px lightgray;
 }
 
+.card-lodging__img{
+  height: 80px;
+  width: 120px;
+}
 
+.lodging__more{
+  font-size: 0.9em;
+}
 
 /* ========== SECTION ACTIVITY ========= */
 
 .activity{
   display: flex;
+  flex-flow: column wrap;
 }
+.activity-card{
+  display: flex;
+}
+.activity-card--small{
 
-.pic-old-port{
-  background: url(images/activites/3_medium/reno-laithienne-vieux-port.jpg) left / 100%;
-  width: 300px;
+}
+.activity-card--big{
+
 }
 
 /* =========== FOOTER=========== */
