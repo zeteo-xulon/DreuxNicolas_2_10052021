@@ -160,7 +160,6 @@ nav a:hover{
 .popular-lodging{
   display: flex;
   flex-flow: row-reverse nowrap;
-  background-color: lightpink; 
 }
 
 /* ========== SECTION POPULAR ========== */
@@ -200,13 +199,18 @@ nav a:hover{
 .lodging{
   display: flex;
   flex-shrink: 3;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   background-color: #F2F2F2;
   padding: 10px;
   margin-left: 2vh;
   border-radius: 20px;
   box-shadow: 2px 3px 5px lightgray;
 }
+.card-lodging__img{
+  height: 50px;
+  width: 50px;
+}
+
 
 
 /* ========== SECTION ACTIVITY ========= */
