@@ -34,6 +34,7 @@
 .card__title{
   font-size: 0.8em;
   margin-left: 2vh;
+  text-align: left;
 }
 .card__text{
   font-size: 0.7em;
@@ -185,6 +186,8 @@ nav a:hover{
   border-radius: 20px;
   box-shadow: 2px 3px 5px lightgray;
 }
+.popular__box{
+}
 .card-popular{
   display: flex;
   flex-flow: row nowrap;
@@ -214,25 +217,31 @@ nav a:hover{
   flex-flow: column wrap;
   justify-content: space-around;
   background-color: #F2F2F2;
+  max-width: 66%;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 2px 3px 5px lightgray;
 }
+
 .card-box{
   display:flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: space-around;
+  border: 3px dotted violet
 }
 .lodging-card{
   background: white;
   border-radius: 20px;
   box-shadow: 2px 2px 10px lightgray;
+  max-height: 12rem;
+  margin-bottom: 3vw;
 }
 
 .card-lodging__img{
-  height: 80px;
-  width: 120px;
+  border-radius: 20px 20px 0px 0px;
+  max-height: 114px;
+  width: 200px;
 }
 
 .lodging__more{
@@ -242,18 +251,35 @@ nav a:hover{
 /* ========== SECTION ACTIVITY ========= */
 
 .activity{
-  display: flex;
-  flex-flow: column wrap;
+ 
 }
 .activity-card{
-  display: flex;
+display: flex;
+
+flex-basis: 3vh;
+}
+.activity__double-card{
+
 }
 .activity-card--small{
-
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 2px 2px 10px lightgrey;
 }
 .activity-card--big{
-
+  border-radius: 20px 20px 0px 0px;
+  
 }
+.activity-card__img--big{
+  border-radius: 20px 20px 0px 0px;
+  height: 25%;
+  width: 25%;
+}
+.activity-card__img--small{
+  border-radius: 20px 20px 0px 0px;
+  height: 25%;
+  width: 25%;
+}
+
 
 /* =========== FOOTER=========== */
 

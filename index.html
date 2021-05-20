@@ -85,10 +85,13 @@
 <div class="popular-lodging" >
 
 <section class="popular">
+
   <div class="popular__title-chart">
     <h2 class="title">Les plus populaires</h2>
     <i class="fas fa-chart-line"></i>
   </div>
+
+  <div class="popular__box">
   <article class="card-sun-hostel card-popular">
     <img src="images/hebergements/4_small//Soleil_du_matin.jpg" alt="image hôtel soleil du matin" class="card-sun-hostel__img card-popular__img">
     <div class="card__info">
@@ -115,6 +118,9 @@
     <i class="fas fa-star card-blue-white-hostel__star"></i>
   </div>
   </article>
+  
+</div>
+
 </section>
 
 <!-- =======  SECTION HEBERGEMENT =========-->
@@ -179,37 +185,48 @@
 
 <section class="activity" id="activité">
   <h2 class="title">Activités à Marseilles</h2>
+
+  <!-- === to take all the card in a group ===-->
 <div class="activity-card">
 
-<figure class="card-old-port activity-card--big">
-  <img src="images/activites/3_medium/old-port.jpg" alt="image d'un vieux port remplit de bateau, des batiments sont au loin" class="card-old-port__img activity-card__img">
-  <h3 class="card-old-port__subtitle activity-card__subtitle">Vieux Port</h3>
-</figure>
+  <!-- ======= NORMAL CARD ========-->
+<aside class="card-old-port activity-card--big">
+  <img src="images/activites/3_medium/old-port.jpg" alt="image d'un vieux port remplit de bateau, des batiments sont au loin" class="card-old-port__img activity-card__img--big">
+  <h3 class="card-old-port__subtitle card__title">Vieux Port</h3>
+</aside>
 
-<figure class="activity-card--small card-pomegues">
-  <img src="images/activites/4_small/fort-pomegues.jpg" alt="image du fort pomègues" class="activity-card__img card-pomegues__img">
-  <h3 class="activity-card__subtitle card-pomegues__subtitle">Fort de pomeguès</h3>
-</figure>
+<!-- ======= DOUBLE CARD ========-->
+<div class="activity__double-card">
+<aside class="activity-card--small card-pomegues">
+  <img src="images/activites/4_small/fort-pomegues.jpg" alt="image du fort pomègues" class="activity-card__img--small card-pomegues__img">
+  <h3 class="card__title card-pomegues__subtitle">Fort de pomeguès</h3>
+</aside>
 
-<figure class="activity-card--small card-frioul-island">
-  <img src="images/activites/4_small/frioul-island.jpg" alt="image de l'île du Frioul" class="activity-card__img card-frioul-island__img">
-  <h3 class="activity-card__subtitle card-frioul-island__subtitle">Îles du Frioul</h3>
-</figure>
+<aside class="activity-card--small card-frioul-island">
+  <img src="images/activites/4_small/frioul-island.jpg" alt="image de l'île du Frioul" class="activity-card__img--small card-frioul-island__img">
+  <h3 class="card__title card-frioul-island__subtitle">Îles du Frioul</h3>
+</aside>
+</div>
 
-<figure class="activity-card--big card-calanques">
-  <img src="images/activites/4_small/parc-national-calanques.jpg" alt="image du parc national des Calanques" class="activity-card__img card-calanques__img">
-  <h3 class="activity-card__subtitle card-calanques__subtitle">Parc National des Calanques</h3>
-</figure>
+<!-- ======= NORMAL CARD ========-->
+<aside class="activity-card--big card-calanques">
+  <img src="images/activites/4_small/parc-national-calanques.jpg" alt="image du parc national des Calanques" class="activity-card__img--big card-calanques__img">
+  <h3 class="card__title card-calanques__subtitle">Parc National des Calanques</h3>
+</aside>
 
-<figure class="activity-card--small card-notre-dame">
-  <img src="images/activites/4_small/notre-dame-de-la-garde.jpg" alt="image de Notre-Dame-de-la-Garde" class="activity-card__img card-notre-dame__img">
-  <h3 class="activity-card__subtitle card-notre-dame__subtitle">Notre-Dame-de-la-Garde</h3>
-</figure>
+<!-- ======= DOUBLE CARD ========-->
+<div class="activity__double-card">
+<aside class="activity-card--small card-notre-dame">
+  <img src="images/activites/4_small/notre-dame-de-la-garde.jpg" alt="image de Notre-Dame-de-la-Garde" class="activity-card__img--small card-notre-dame__img">
+  <h3 class="card__title card-notre-dame__subtitle">Notre-Dame-de-la-Garde</h3>
+</aside>
 
-<figure class="activity-card--small card-longchamp">
-  <img src="images/activites/4_small/parc-longchamp.jpg" alt="image du parc de Longchamp" class="activity-card__img card-longchamp__img">
-  <h3 class="activity-card__subtitle card-longchamp__subtitle">Parc Longchamp</h3>
-</figure>
+<aside class="activity-card--small card-longchamp">
+  <img src="images/activites/4_small/parc-longchamp.jpg" alt="image du parc de Longchamp" class="activity-card__img--small card-longchamp__img">
+  <h3 class="card__title card-longchamp__subtitle">Parc Longchamp</h3>
+</aside>
+</div>
+
 </div>
 
 </section>
