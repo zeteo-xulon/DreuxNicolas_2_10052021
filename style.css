@@ -6,11 +6,11 @@
 }
 @font-face {
   font-family: 'icon-reservia';
-  src:  url('Fonts/Reservia-boosted.eot?r05hlv');
-  src:  url('fonts/Reservia-boosted.eot?r05hlv#iefix') format('embedded-opentype'),
-    url('fonts/Reservia-boosted.ttf?r05hlv') format('truetype'),
-    url('fonts/Reservia-boosted.woff?r05hlv') format('woff'),
-    url('fonts/Reservia-boosted.svg?r05hlv#Reservia-boosted') format('svg');
+  src:  url(Fonts/Reservia-boosted.eot);
+  src:  url(Fonts/Reservia-boosted.eot) format('embedded-opentype'),
+    url(Fonts/Reservia-boosted.ttf) format('truetype'),
+    url(Fonts/Reservia-boosted.woff) format('woff'),
+    url(Fonts/Reservia-boosted.svg) format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -18,7 +18,7 @@
 
 .icon-reservia {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icon-reservia' !important;
+  font-family: icon-reservia !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
