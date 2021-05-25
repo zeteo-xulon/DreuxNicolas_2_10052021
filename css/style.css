@@ -1,34 +1,22 @@
+
 /* ====== STYLE GENERAL ======= */
+
 @font-face {
   font-family: Raleway;
-  src: url(Fonts/Raleway-Italic-VariableFont_wght.ttf);
-  src: url(Fonts/Raleway-VariableFont_wght.ttf);
+  src: url(fonts/Raleway-Italic-VariableFont_wght.ttf);
+  src: url(fonts/Raleway-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: 'icon-reservia';
-  src:  url(Fonts/Reservia-boosted.eot);
-  src:  url(Fonts/Reservia-boosted.eot) format('embedded-opentype'),
-    url(Fonts/Reservia-boosted.ttf) format('truetype'),
-    url(Fonts/Reservia-boosted.woff) format('woff'),
-    url(Fonts/Reservia-boosted.svg) format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+  font-family: icon-reservia;
+  src:  url(fonts/Reservia-boosted.eot);
+  src:  url(fonts/Reservia-boosted.eot) format('embedded-opentype'),
+    url(fonts/Reservia-boosted.ttf) format('truetype'),
+    url(fonts/Reservia-boosted.woff) format('woff'),
+    url(fonts/Reservia-boosted.svg) format('svg');
 }
 
 .icon-reservia {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: icon-reservia !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: icon-reservia, Arial, Helvetica, sans-serif;
 }
 
 *{
@@ -113,8 +101,15 @@
 }
 */
 
+/* =================================================================*/
 
-/* ========== HEADER ============ */
+/*                     HEADER                   */
+
+/* =================================================================*/
+.head{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* == NAV ==*/
 
@@ -136,17 +131,24 @@ nav a{
 nav a:hover{
   border-top: 3px solid #0065FC;
   color: #0065FC;
-  padding-top: 2.5vw;
+  padding-top: 3vh;
 }
 .nav__inscription a{
   color: #0065FC;
   font-weight: bolder;
 }
 
-/*== SEARCH ==*/
+/* =================================================================*/
+
+/*                         SECTION SEARCH                   */
+
+/* =================================================================*/
+
+/*== SEARCH BAR ==*/
 
 .search{
-  margin-top: -5vw;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .head__logo{
   margin-left: -2vh;
@@ -190,6 +192,7 @@ nav a:hover{
 }
 
 /* == FILTER == */
+
 .filtres{
   display: flex;
   align-items: center;
@@ -204,7 +207,9 @@ nav a:hover{
   display: flex;
   flex-flow: row wrap;
 }
+
 /*= FIlTER BUTTON = */
+
 .filtres__btn{
   display: flex;
   align-items: center;
@@ -251,15 +256,23 @@ nav a:hover{
 .filtres__info-text{
   font-size: 0.7em;
 }
+/* =================================================================*/
 
-/* ========= POPULAR & LODGING ========= */
+/*                  POPULAR & LODGING                    */
+
+/* =================================================================*/
 
 .popular-lodging{
   display: flex;
   flex-flow: row-reverse nowrap;
 }
 
+/* =================================================================*/
+
 /* ========== SECTION POPULAR ========== */
+
+/* =================================================================*/
+
 .popular{
   display: flex;
   flex-flow: column nowrap;
@@ -301,8 +314,12 @@ nav a:hover{
   border-radius: 12px 0px 0px 12px;
 }
 
+/* =================================================================*/
 
 /* ======= SECTION LODGING ========== */
+
+/* =================================================================*/
+
 .lodging{
   display: flex;
   flex-flow: column wrap;
@@ -355,8 +372,11 @@ nav a:hover{
 .lodging__more{
   font-size: 0.9em;
 }
+/* =================================================================*/
 
 /* ========== SECTION ACTIVITY ========= */
+
+/* =================================================================*/
 
 .activity{
   margin-top: 3%;
@@ -379,7 +399,7 @@ nav a:hover{
 
 .activity-card--small{
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 3px 3px 10px 0px #c3c0c0;
   height: 47%;
   width: auto;
 }
@@ -392,7 +412,7 @@ nav a:hover{
   border-radius: 20px 20px 20px 20px;
   max-width: 23%;
   margin-right: 2%;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 3px 3px 10px 0px #c3c0c0;
 }
 .activity-card--big:hover{
   transform:scale(1.05, 1.05);
@@ -436,7 +456,12 @@ nav a:hover{
   align-items: center;
   height: 50px;
 }
+
+/* =================================================================*/
+
 /* =========== FOOTER=========== */
+
+/* =================================================================*/
 
 footer{
   display: flex;
@@ -445,7 +470,7 @@ footer{
   flex-wrap: wrap;
   flex-grow: 100%;
   padding: 2%;
-  margin: -3%;
+  margin: 0px -8px -10px -20px;
   font-size: 0.8em;
 }
 footer dl{
