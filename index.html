@@ -173,7 +173,7 @@
 							<h3 class="card__title">Hôtel du port</h3>
 							<h4 class="card__text">Nuit à partir de 50<strong>€</strong></h4>
 						</div>
-						<span class="icon-reservia star--blue">hhhhh</span></span>
+						<span class="icon-reservia star--blue">hhhhh</span>
 					</div>
 				</article>
 			
@@ -235,59 +235,46 @@
 
 <!--=====================================================-->
 
-	<section class="activity column" id="activité">
+	<section class="activity column debug" id="activité">
 		<h2 class="title">Activités à Marseilles</h2>
 
 	<!-- === to take all the card in a group ===-->
-		<div class="activity-card row">
+		<div class="activity__box row debug">
 
 		<!-- ======= NORMAL CARD ========-->
-		<article class="card-old-port activity-card--big column">
-			<img src="images/activites/3_medium/old-port.jpg" alt="image d'un vieux port remplit de bateau, des batiments sont au loin" class="card-old-port__img activity-card__img--big">
-			<div class="card__white-bg">
-				<h3 class="card-old-port__subtitle card__title card__subtitle">Vieux Port</h3>
-			</div>
-		</article>
-
-		<!-- ======= DOUBLE CARD A ========-->
-		<div class="activity__double-card-a column">
-			<article class="activity-card--small card-pomegues">
-				<img src="images/activites/4_small/fort-pomegues.jpg" alt="image du fort pomègues" class="activity-card__img--small card-pomegues__img">
-				<div class="card__white-bg">
-					<h3 class="card__title card-pomegues__subtitle card__subtitle">Fort de pomeguès</h3>
-				</div>
+			<article class="activity__card activity-card--big column place activity-card__img--big border img__a">
+				<!--
+				<img src="images/activites/4_small/old-port.jpg">
+				-->
+				<h3 class="card__title card__subtitle">Vieux Port</h3>
 			</article>
 
-			<article class="activity-card--small card-frioul-island column">
-				<img src="images/activites/4_small/frioul-island.jpg" alt="image de l'île du Frioul" class="activity-card__img--small card-frioul-island__img">
-				<div class="card__white-bg">
+		<!-- ======= DOUBLE CARD A ========-->
+		<div class="activity__double-card-a column space">
+
+			<article class="activity__card activity-card--small card-pomegues activity-card__img--small img__b border">
+					<h3 class="card__title card-pomegues__subtitle card__subtitle">Fort de pomeguès</h3>
+			</article>
+
+			<article class="activity__card activity-card--small card-frioul-island column activity-card__img--small img__c border">
 					<h3 class="card__title card-frioul-island__subtitle card__subtitle">Îles du Frioul</h3>
-				</div>
 			</article>
 		</div>
 
 		<!-- ======= NORMAL CARD ========-->
-		<article class="activity-card--big card-calanques column">
-			<img src="images/activites/4_small/parc-national-calanques.jpg" alt="image du parc national des Calanques" class="activity-card__img--big card-calanques__img">
-			<div class="card__white-bg">
-				<h3 class="card__title card-calanques__subtitle card__subtitle">Parc National des Calanques</h3>
-			</div>
-		</article>
-
-		<!-- ======= DOUBLE CARD B ========-->
-		<div class="activity__double-card-b column">
-			<article class="activity-card--small card-notre-dame column">
-				<img src="images/activites/4_small/notre-dame-de-la-garde.jpg" alt="image de Notre-Dame-de-la-Garde" class="activity-card__img--small card-notre-dame__img">
-				<div class="card__white-bg">
-					<h3 class="card__title card-notre-dame__subtitle card__subtitle">Notre-Dame-de-la-Garde</h3>
-				</div>
+			<article class="activity__card activity-card--big activity-card__img--big img__d border">
+					<h3 class="card__title card__subtitle">Parc National des Calanques</h3>
 			</article>
 
-			<article class="activity-card--small card-longchamp column">
-				<img src="images/activites/4_small/parc-longchamp.jpg" alt="image du parc de Longchamp" class="activity-card__img--small card-longchamp__img">
-				<div class="card__white-bg">
-					<h3 class="card__title card-longchamp__subtitle card__subtitle">Parc Longchamp</h3>
-				</div>
+		<!-- ======= DOUBLE CARD B ========-->
+		<div class="activity__double-card-b column space">
+
+			<article class="activity__card activity-card--small column activity-card__img--small img__e border">
+					<h3 class="card__title card__subtitle">Notre-Dame-de-la-Garde</h3>
+			</article>
+
+			<article class="activity__card activity-card--small activity-card__img--small img__f border">
+					<h3 class="card__title card__subtitle">Parc Longchamp</h3>
 			</article>
 		</div>
 
@@ -302,7 +289,7 @@
 
 <!--=====================================================-->
 
-<footer class="footer">
+<footer class="footer row">
     <dl>
      	 <dt> A propos</dt>
 			<dd><a href="#"> Fonctionnement du site</a></dd>
