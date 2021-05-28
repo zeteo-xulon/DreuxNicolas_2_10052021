@@ -160,36 +160,49 @@ nav a:hover{
   margin-top: -1vw;
   margin-bottom: 20px;
 }
-.head__search{
+.search__bar{
   display: flex;
   align-items: center;
 }
+.search-gps-field{
+  display: flex;
+  width: 100%;
+}
 .logo-gps{
+  display: flex;
   background-color: #F2F2F2;
   border-top-left-radius: 30%;
   border-bottom-left-radius: 30%;
   padding: 10px 14px 14px 14px;
-  margin-bottom: -15px;
-  margin-right: -5px;
+  
+  height: 100%;
 }
-.head__search input[type=search]{
+.search__bar input[type=search]{
+  display: flex;
   border: 2px solid #F2F2F2;
   font-weight: bolder;
   padding: 10px;
 }
-.head__search input[type=submit]{
+.search__bar input[type=submit]{
+  display: flex;
   background: #0065FC;
   color: white;
   font-weight: bold;
   border: 1px #0065FC solid;
   padding: 11px;
   border-radius: 0% 10px 10px 0%;
+  margin-left: -8px;
 }
-.head__search input[type=submit]:hover{
+.search__bar input[type=submit]:hover{
   background-color: #DEEBFF;
   color: #0065FC;
   border: 1px solid #DEEBFF;
   cursor:pointer;
+}
+.search__bar input[type=submit]:focus{
+  transition: 0.5s;
+  background-color: #F2F2F2;
+  color: #0065FC;
 }
 
 /* == FILTER == */
@@ -298,7 +311,6 @@ nav a:hover{
 }
 .card-popular:hover{
   transform: scale(1.1, 1.1);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1s;
   cursor: pointer;
 }
@@ -503,11 +515,15 @@ footer a:hover{
 
 
 
-/* ================================*/
+/* =====================================================*/
 
 /* ====== MEDIA QUERIES ===========*/
 
-/*================================*/
+
+
+/*                           TABLET                    */
+
+/*======================================================*/
 
 @media only screen and (max-width: 900px){
   .popular-lodging{
@@ -539,54 +555,31 @@ footer a:hover{
   .lodging{
     max-width: 100%;
   }
+  .lodging-card{
+    display: flex;
+    flex-flow: column nowrap;
+    max-height: 200px;
+    max-width: 30%;
+    min-width: 207px;
+  }
   .activity__box{
     display: flex;
     flex-flow: column wrap;
   }
   .activity__card{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px lightgray;
-    height: 60vh !important;
+    min-height: 30vh;
+    height: 100%;
     max-width: 100%;
-    flex-basis: 0;
-    flex-grow: 1;
+    flex: 1 0 0;
   } 
-  .img__a{
-    background:linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh),center top url(images/activites/3_medium/old-port.jpg) no-repeat;
-    z-index: 1;
-    background-size: cover;
-  }
   .img__b{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh), center url(images/activites/3_medium/fort-pomegues.jpg);
-    z-index: 1;
-    background-size: cover;
     flex-grow: 1;
   }
   .img__c{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh), center url(images/activites/4_small/frioul-island.jpg);
-    z-index: 1;
-    background-size: cover;
     margin-left: 3vh;
     margin-top: 0vh;
   }
-  .img__d{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh),center url(images/activites/3_medium/parc-national-calanques.jpg);
-    z-index: 1;
-    background-size: cover;
-  }
-  .img__e{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh),center top url(images/activites/4_small/notre-dame-de-la-garde.jpg);
-    z-index: 1;
-    background-size: cover;
-  }
   .img__f{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh), center url(images/activites/4_small/parc-longchamp.jpg);
-    background-size: cover;
-    z-index: 1;
     margin-left: 3vh;
     margin-top: 0vh;
   }
@@ -603,6 +596,7 @@ footer a:hover{
     max-width: 100%;
     margin-bottom: 3vh;
   }
+  
   .border{
     border-radius: 20px 20px 20px 20px;
     object-fit: cover;
@@ -625,7 +619,146 @@ footer a:hover{
     width: 100%;
   }
   
+}/* =========================================================*/
+
+/*                    SMARTPHONE              */
+
+/*==========================================================*/
+
+
+@media only screen and (max-width: 506px){
+
+/*              HEADER          */
+
+
+nav{
+  width: 100%;
+  margin-bottom: 10vh;
 }
-@media only screen and (max-width: 375px){
-  
+nav ul{
+  flex-flow: column-reverse wrap;
+  width: 100%;
+}
+nav a{
+  font-size: 1.2em;
+}
+nav a:hover{
+  border-top: 0px solid #0065FC;
+  padding-top: 0vh;
+}
+nav a:focus{
+  border-bottom: 3px solid #0065FC;
+  color: #0065FC;
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__inscription a{
+  position: absolute;
+  right: 5vw;
+  top: 3.9vh;
+}
+.nav__inscription a:focus{
+  border-bottom: 0px solid #0065FC;
+  padding-bottom: 0vh;
+  transition: 1s;
+  transform: scale(1.1,1.1);
+}
+
+.nav__activity{
+  position:absolute;
+  right: 0vw;
+  top: 10vh;
+  width: 50%;
+  text-align: center;
+}
+
+.nav__lodging{
+  position:absolute;
+  left: 0vw;
+  top: 10vh;
+  width: 50%;
+  text-align: center;
+}
+
+
+/*              SEARCH          */
+
+  .filtres{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-gps-field{
+    box-sizing: border-box;
+ 
+  }
+  .search__bar input[type=search]{
+    width: 100%;
+    overflow: hidden;
+  }
+
+/*             POPULAR            */
+
+  .popular__box{
+    flex-flow: column nowrap;
+  }
+.card-popular__img{
+  height: 120px;
+  width: 45%;
+}
+
+/*        LODGING       */
+
+.lodging{
+  max-width: 100%;
+}
+.lodging-card{
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: 30vh;
+  max-width: 100%;
+  min-width: 100px;
+}
+.card-lodging__img{
+  min-height: 59%;
+  height: 65%;
+}
+
+/*            ACTIVITY        */
+
+  .activity-card--small{
+    min-width: 100px;
+    width: 100%;
+    margin-left: 0vh;
+    margin-right: 0vh;
+    max-height: 20vh;
+    margin-bottom: 3vh;
+  }
+  .activity-card--big{
+    margin-bottom: 3vh;
+  }
+  .activity__double-card-a{
+    flex-direction: column;
+    margin-bottom: 0vh;
+  }
+  .activity__double-card-b{
+    flex-direction: column;
+    margin-bottom: 0vh;
+  }
+
+/*             FOOTER          */
+
+footer{
+  flex-grow: 1;
+  padding:8% 0% 10% 10%;
+  margin: 0px -8px -10px -20px;
+  font-size: 0.8em;
+}
+.footer{
+  flex-flow: column nowrap;
+}
+
+
 }
