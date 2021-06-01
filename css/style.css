@@ -27,7 +27,7 @@
   font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 .margin-box{
-  margin: 2vw;
+  margin: 2vw 3vw;
 }
 
 /* -+-+- COLOR THEME -+-+- */
@@ -59,7 +59,7 @@
 
 /* -+-+- GENERAL FONT -+-+-*/
 .title{
-  font-size: 1em;
+  font-size: 1.4em;
   font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
 }
 .card__title{
@@ -136,7 +136,7 @@ body{
 nav{
   display: flex;
   justify-content: flex-end;
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 nav ul{
   list-style: none;
@@ -151,12 +151,12 @@ nav a{
 nav a:hover{
   border-top: 3px solid #0065FC;
   color: #0065FC;
-  padding-top: 5vh;
+  padding-top: 4vh;
 }
-.active--link:link{
+.active--link{
   border-top: 3px solid #0065FC;
   color: #0065FC;
-  padding-top: 5vh;
+  padding-top: 4vh;
 }
 .nav__inscription a{
   color: #0065FC;
@@ -479,11 +479,13 @@ nav a:hover{
 }
 .card__subtitle{
   position: static;
-  font-size: 0.8em;
+  font-size: 1rem;
+  padding-bottom: 1vh;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   z-index: 2;
+  font-family: 'Raleway-bold',Arial, Helvetica, sans-serif;
 }
 
 .activity-card--big{
@@ -512,18 +514,23 @@ nav a:hover{
 
 /* =================================================================*/
 
+.footer__box{
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 3vh;
+}
 footer{
   justify-content : flex-start;
   background-color: #F2F2F2;
-  flex-grow: 100%;
   font-size: 0.8em;
   width: 100%;
+  padding-left: 3vw;
 }
 footer dl{
   margin-top: 1%;
+  flex: 1 0 27%;
 }
 footer dt{
-  font-weight: bolder;
   padding-bottom: 10px;
   font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
 }
@@ -553,7 +560,30 @@ footer a:hover{
 
 /*======================================================*/
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 1000px){
+
+  /* ==== GENERAL ===*/
+
+  .star--blue{
+    font-size: 0.7em;
+    padding-bottom: 5px;
+  }
+  .star--gray{
+    padding-bottom: 5px;
+    font-size: 0.7em;
+  }
+  .card__title{
+    font-size: 0.9em;
+    margin: 5px 0px 5px 0px;
+  }
+  .card__text{
+    font-size: 0.7em;
+    margin: 0px;
+  }
+
+
+  /* ===== POPULAR === */
+
   .popular-lodging{
     display: flex;
     flex-flow: column nowrap;
@@ -577,9 +607,9 @@ footer a:hover{
     height: auto;
     align-items: center;
   }
-  .card-popular h3, h4{
-   font-size: 0.7em;
-  }
+
+/*===== LODGING =====*/
+
   .lodging{
     max-width: 100%;
   }
@@ -590,6 +620,9 @@ footer a:hover{
     max-width: 30%;
     min-width: 207px;
   }
+
+/*===== ACTIVITY =====*/
+
   .activity__box{
     display: flex;
     flex-flow: column wrap;
@@ -600,6 +633,10 @@ footer a:hover{
     max-width: 100%;
     flex: 1 0 0;
   } 
+  .img__a{
+    background-position-y: 25%;
+    background-size: cover;
+  }
   .img__b{
     flex-grow: 1;
   }
@@ -613,11 +650,12 @@ footer a:hover{
   }
   .card__subtitle{
     position: static;
-    font-size: 0.8em;
+    font-size: 1rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     z-index: 2;
+    font-family: 'Raleway-bold',Arial, Helvetica, sans-serif;
   }
   .activity-card--big{
     box-sizing: border-box;
@@ -631,7 +669,8 @@ footer a:hover{
     object-position: 50% 50%;
   }
   
-  /*====*/
+  /*== ACTIVITY DOUBLE CARD ==*/
+
   .activity__double-card-a{
     display: flex;
     flex-flow: row wrap;
@@ -679,6 +718,16 @@ nav a:focus{
   color: #0065FC;
   padding-bottom: 2vh;
   display: flex;
+  justify-content: center;
+}
+.active--link{
+  display: flex;
+  align-self: center;
+  border-top: 0px solid #0065FC;
+  border-bottom: 3px solid #0065FC;
+  color: #0065FC;
+  padding-bottom: 2vh;
+  padding-top: 0px;
   justify-content: center;
 }
 
@@ -781,7 +830,6 @@ nav a:focus{
 footer{
   flex-grow: 1;
   padding:8% 0% 10% 10%;
-  margin: 0px -8px -10px -20px;
   font-size: 0.8em;
 }
 .footer{
