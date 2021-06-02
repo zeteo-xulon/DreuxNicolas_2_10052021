@@ -536,6 +536,10 @@ footer h3{
   margin-bottom: 0px;
   font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
 }
+footer ul{
+  margin-left: 0px;
+  padding-left: 0px;
+}
 footer li{
   list-style: none;
   padding-top: 5px;
