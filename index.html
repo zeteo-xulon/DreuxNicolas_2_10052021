@@ -51,6 +51,9 @@
 						<span class="icon-reservia logo-gps">e</span>
 						<input type="search" placeholder="Marseille, France" aria-label="barre de recherche du site" id="search__text"/>
 						<input type="submit" value="Rechercher" class="search__btn">
+						<button class="search__bar__magnifier">
+							<i class="fas fa-search"></i>
+						</button>
 					</div>
 				</form>
 
@@ -104,7 +107,7 @@
 
 				<div class="popular__box">
 
-					<a href="#" class="flex">
+					<a href="#" class="flex popular__a">
 						<article class="card-sun-hostel card-popular">
 							<img src="images/hebergements/4_small//Soleil_du_matin.jpg" alt="image hôtel soleil du matin" class="card-sun-hostel__img card-popular__img">
 							<div class="card__info">
@@ -117,7 +120,7 @@
 						</article>
 					</a>
 
-					<a href="#" class="flex">
+					<a href="#" class="flex  popular__a">
 						<article class="card-water-bedroom card-popular">
 							<img src="images/hebergements/4_small/Au_coeur_de_l'eau.jpg" alt="image Chambres d'hôtes Au cœur de l'eau " class="card-water-bedroom__img card-popular__img">
 							<div class="card__info">
@@ -130,7 +133,7 @@
 						</article>
 					</a>
 
-					<a href="#" class="flex">
+					<a href="#" class="flex  popular__a">
 						<article class="card-blue-white-hostel card-popular">
 							<img src="images/hebergements/4_small//Tout_bleu_et_blanc.jpg" alt="image Hôtel Tout bleu et Blanc" class="card-blue-white-hostel__img card-popular__img">
 							<div class="card__info">
@@ -157,7 +160,7 @@
 				<h2 class="title popular__title">Hébergements à Marseille</h2>
 
 				<div class="card-box">
-					<a href="#" class="flex">
+					<a href="#" class="flex lodging__a">
 						<article class="lodging-card card-cannebiere">
 								<img src="images/hebergements/3_medium/Auberge_la_cannebiere.jpg" alt="image chambre lit superposé" class="card-cannebiere__img card-lodging__img">
 								<div class="card__info">
@@ -173,7 +176,7 @@
 						</article>
 					</a>
 					
-					<a href="#" class="flex">
+					<a href="#" class="flex lodging__a">
 						<article class="lodging-card card-hotel-port">
 								<img src="images/hebergements/3_medium/Hôtel_du_port.jpg" alt="image chambre blanche 2 lit séparé" class="card-hotel-port__img card-lodging__img">
 								<div class="card__info">
@@ -187,7 +190,7 @@
 						</article>
 					</a>
 						
-					<a href="#" class="flex">
+					<a href="#" class="flex lodging__a">
 						<article  class="lodging-card card-mouettes">
 								<img src="images/hebergements/3_medium/Hôtel_les_mouettes.jpg" alt="image chambre lit superposé" class="card-mouettes__img card-lodging__img">
 								<div class="card__info">
@@ -203,7 +206,7 @@
 						</article>
 					</a>
 
-					<a href="#" class="flex">
+					<a href="#" class="flex lodging__a">
 						<article class="lodging-card card-hostel-sea">
 								<img src="images/hebergements/3_medium/Hôtel_de_la_mer.jpg" alt="image chambre lit double avec tableau" class="card-hostel-sea__img card-lodging__img">
 								<div class="card__info">
@@ -219,7 +222,7 @@
 						</article>
 					</a>
 
-					<a href="#" class="flex">
+					<a href="#" class="flex lodging__a">
 						<article class="lodging-card card-panier">
 								<img src="images/hebergements/3_medium/Auberge_Le_panier.jpg" alt="image chambre 2 lits superposé en bois typé cabine" class="card-panier__img card-lodging__img">
 								<div class="card__info">
@@ -235,7 +238,7 @@
 						</article>
 					</a>
 
-					<a href="#" class="flex">
+					<a href="#" class="flex lodging__a">
 						<article class="lodging-card card-amina">
 								<img src="images/hebergements/3_medium/chez_amina.jpg" alt="image chambre lit simple avec bureau et chaise en bois" class="card-amina__img card-lodging__img">
 								<div class="card__info">
@@ -270,46 +273,44 @@
 			<div class="activity__box row">
 
 					<!-- ======= NORMAL CARD ========-->
-					<a href="#" class="activity__a--big flex">
-						<article class="activity__card activity-card--big column place activity-card__img--big border img__a">
-							<!--
-							<img src="images/activites/4_small/old-port.jpg">
-							-->
+					<a href="#" class="activity__a flex">
+						<article class="activity__card  column place  border img__a">
 							<h3 class="card__title card__subtitle">Vieux Port</h3>
 						</article>
 					</a>	
 
 					<!-- ======= DOUBLE CARD A ========-->
-					<div class="activity__double-card-a column space">
+					<div class="activity__a double column space">
 						<a href="#" class="activity__card--bigger flex">
-							<article class="activity__card activity-card--small card-pomegues activity-card__img--small img__b border">
-									<h3 class="card__title card-pomegues__subtitle card__subtitle">Fort de pomeguès</h3>
+							<article class="activity__card img__b border">
+									<h3 class="card__title  card__subtitle">Fort de pomeguès</h3>
 							</article>
 						</a>
 
 						<a href="#" class="activity__card--smaller flex">
-							<article class="activity__card activity-card--small card-frioul-island column activity-card__img--small img__c border">
-									<h3 class="card__title card-frioul-island__subtitle card__subtitle">Îles du Frioul</h3>
+							<article class="activity__card img__c border">
+									<h3 class="card__title card__subtitle">Îles du Frioul</h3>
 							</article>
 						</a>
 					</div>
 
 					<!-- ======= NORMAL CARD ========-->
-					<a href="#" class="activity__a--big flex">
-						<article class="activity__card activity-card--big activity-card__img--big img__d border">
+					<a href="#" class="activity__a flex">
+						<article class="activity__card  img__d border">
 								<h3 class="card__title card__subtitle">Parc National des Calanques</h3>
 						</article>
 					</a>
+
 					<!-- ======= DOUBLE CARD B ========-->
-					<div class="activity__double-card-b column space">
-					<a href="#" class="flex">
-						<article class="activity__card activity-card--small column activity-card__img--small img__e border">
+					<div class="activity__a double column space">
+					<a href="#" class="activity__card--even flex">
+						<article class="activity__card img__e border">
 								<h3 class="card__title card__subtitle">Notre-Dame-de-la-Garde</h3>
 						</article>
 					</a>
 
-					<a href="#" class="flex">
-						<article class="activity__card activity-card--small activity-card__img--small img__f border">
+					<a href="#" class="activity__card--even flex">
+						<article class="activity__card  img__f border">
 								<h3 class="card__title card__subtitle">Parc Longchamp</h3>
 						</article>
 					</a>
