@@ -495,32 +495,32 @@ nav a:hover{
 	transform: scale(1.05,1.05);
 }
 .img__a{
-	background:linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh),center top url(images/activites/3_medium/old-port.jpg) no-repeat;
+	background:linear-gradient(0deg, rgba(255,255,255,1) 50px, rgba(0,0,0,0) 50px),center top url(images/activites/3_medium/old-port.jpg) no-repeat;
 	z-index: 1;
 	background-size: cover;
 }
 .img__b{
-	background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh), center url(images/activites/3_medium/fort-pomegues.jpg);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 50px, rgba(0,0,0,0) 50px), center url(images/activites/3_medium/fort-pomegues.jpg);
 	z-index: 1;
 	background-size: cover;
 }
 .img__c{
-	background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh), center url(images/activites/4_small/frioul-island.jpg);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 50px, rgba(0,0,0,0) 50px), center url(images/activites/4_small/frioul-island.jpg);
 	z-index: 1;
 	background-size: cover;
 }
 .img__d{
-	background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh),center url(images/activites/3_medium/parc-national-calanques.jpg);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 50px, rgba(0,0,0,0) 50px),center url(images/activites/3_medium/parc-national-calanques.jpg);
 	z-index: 1;
 	background-size: cover;
 }
 .img__e{
-	background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh),center top url(images/activites/4_small/notre-dame-de-la-garde.jpg);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 50px, rgba(0,0,0,0) 50px),center top url(images/activites/4_small/notre-dame-de-la-garde.jpg);
 	z-index: 1;
 	background-size: cover;
 }
 .img__f{
-	background: linear-gradient(0deg, rgba(255,255,255,1) 5vh, rgba(0,0,0,0) 5vh), center url(images/activites/4_small/parc-longchamp.jpg);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 50px, rgba(0,0,0,0) 50px), center url(images/activites/4_small/parc-longchamp.jpg);
 	background-size: cover;
 	z-index: 1;
 }
