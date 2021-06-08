@@ -431,7 +431,9 @@ nav a:hover{
 }
 
 .lodging__more {
+	padding-top: 2%;
     font-size: 1.5em;
+    font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
 }
 
 .card-lodging__img{
@@ -978,6 +980,7 @@ footer a:hover{
 				}
 				.lodging__more {
 					font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
+					padding-top: 0%;
 					margin-top: 2vh;
 					font-size: 1.2em;
 				 }
