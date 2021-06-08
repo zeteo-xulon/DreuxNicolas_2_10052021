@@ -138,6 +138,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	padding-bottom: 15px;
 }
 .head__logo{
   	height: 55px;
@@ -768,6 +769,9 @@ footer a:hover{
 				/*              HEADER          */
 				header{
 					height: 150px;
+				}
+				.head{
+					padding-bottom: 0px;
 				}
 				.head__logo{
 					height: 50px;
