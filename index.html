@@ -9,295 +9,349 @@
     <title>Réservia</title>
 </head>
 <body>
-<div class="margin-box">
-<!-- ============== HEADER ==============-->
-  <header class="head">
+	<div class="margin-box">
+<!--=====================================================-->
+
+	<!--                     HEADER              -->
+
+<!--=====================================================-->
+		<header class="head">
 
 
-                                                       <!-- ==LOGO==-->
-     <div class="head__logo">
-           <p>
-               <img rel="icon" src="images/logo/Reservia.svg" alt="logo du Reservia" height="29" width="95">
-           </p>
-      </div>
-                                                 <!-- ==NAV== -->
+								<!-- ==LOGO==-->
+			<div class="head__box-logo">
+				<p>
+					<img rel="icon" src="images/logo/Reservia.svg" alt="logo du Reservia" class="head__logo">
+				</p>
+			</div>
+								<!-- ==NAV == -->
 
-                                                 
-    <nav class="nav">
-      <ul>
-          <li class="nav__hebergements"><a href="#hebergements">Hébergements</a></li>
-            <li class="nav__activités"><a href="#activité">activités</a></li>
-          <li class="nav__inscription"><a href="#">S'inscrire</a></li>
-      </ul>
-    </nav>
+											
+			<nav class="nav">
+				<ul>
+					<li class="nav__lodging"><a href="#hebergements" class="active--link">Hébergements</a></li>
+					<li class="nav__activity"><a href="#activité">activités</a></li>
+					<li class="nav__inscription"><a href="#">S'inscrire</a></li>
+				</ul>
+			</nav>
 
-     </header>
+		</header>
 
-                                                    <!-- ==TITLE ==-->
+								<!-- ==TITLE ==-->
+		<main>
+			<section class="search">
+				<h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+				<h2 class="head__subtitle">En plein centre ville ou en pleine nature</h2>
+			
 
-      <section class="search">
-        <h1 class="title">Trouvez votre hébergements pour des vacances de rêve</h1>
-        <h2 class="head__subtitle">En plein centre ville ou en pleine nature</h2>
-      
+								<!-- ==SEARCH BAR ==-->
 
-                                               <!-- ==SEARCH BAR ==-->
+				<form class="search__bar">
+					<div class="search-gps-field">
+						<span class="icon-reservia logo-gps">e</span>
+						<input type="search" placeholder="Marseille, France" aria-label="barre de recherche du site" id="search__text"/>
+						<input type="submit" value="Rechercher" class="search__btn">
+						<button class="search__bar__magnifier">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+				</form>
 
-      <aside class="head__search">
-        <div class="search-gps-field">
-          <span class="icon-reservia logo-gps">e</span>
-          <input type="search" value="Marseille, France" aria-label="barre de recherche du site" />
-        </div>
-        <input type="submit" value="Rechercher" class="search__btn">
-      </aside>
+									<!-- ==FILTERS ==-->
 
-                                                    <!-- ==FILTERS ==-->
+				<aside class="filtres">
+					<h2 class="filtres__title">Filtres</h2>
+					<div class="filtres__list">
+					
+						<p class="filtres__btn">
+							<i class="fas fa-money-bill-wave btn__img"></i>
+							<span class="btn__text">Économique</span>
+						</p>
+					
+						<p class="filtres__btn">
+							<i class="fas fa-child btn__img"></i>
+							<span class="btn__text">Familial</span>
+						</p>
+						
+						<p class="filtres__btn">
+							<i class="fas fa-heart btn__img"></i>
+							<span class="btn__text">Romantique</span>
+						</p>
+						
+						<p class="filtres__btn">
+							<i class="fas fa-dog btn__img"></i>
+							<span class="btn__text">Animaux autorisés</span>
+						</p>
+					</div>
+				</aside>
 
-      <aside class="filtres">
-        <h2 class="filtres__title">Filtres</h2>
-        <div class="filtres__list">
-          
-          <p class="filtres__btn">
-            <i class="fas fa-money-bill-wave btn__img"></i>
-            <span class="btn__text">Économique</span>
-          </p>
-         
-          <p class="filtres__btn">
-            <i class="fas fa-child btn__img"></i>
-            <span class="btn__text">Familial</span>
-            </p>
-          
-          <p class="filtres__btn">
-            <i class="fas fa-heart btn__img"></i>
-            <span class="btn__text">Romantique</span>
-          </p>
-          
-          <p class="filtres__btn">
-            <i class="fas fa-dog btn__img"></i>
-            <span class="btn__text">Animaux autorisés</span>
-          </p>
-        </div>
-      </aside>
+					<p class="filtres__info-text">
+						<i class="fas fa-info filtres__info" ></i> Plus de 500 logements sont disponibles dans cette ville
+					</p>
+		</section>
 
-      <p class="filtres__info-text"><i class="fas fa-info filtres__info" ></i> Plus de 500 logements sont disponibles dans cette ville</p>
-    </section>
+<!--=====================================================-->
 
+	<!--             SECTION LES PLUS POPULAIRES                 -->
 
-<!-- ======= SECTION LES PLUS POPULAIRES  ===== -->
+<!--=====================================================-->
 
-<div class="popular-lodging" >
+		<div class="popular-lodging" >
 
-<section class="popular">
+			<section class="popular">
 
-  <div class="popular__title-chart">
-    <h2 class="title">Les plus populaires</h2>
-    <i class="fas fa-chart-line"></i>
-  </div>
+				<div class="popular__title-chart">
+					<h2 class="title">Les plus populaires</h2>
+					<i class="fas fa-chart-line"></i>
+				</div>
 
-  <div class="popular__box">
-  <article class="card-sun-hostel card-popular">
-    <img src="images/hebergements/4_small//Soleil_du_matin.jpg" alt="image hôtel soleil du matin" class="card-sun-hostel__img card-popular__img">
-    <div class="card__info">
-      <div class="card__text__up">
-        <h3 class="card__title">Hôtel Le soleil du matin</h3>
-        <h4 class="card__text">Nuit à partir de 128<strong>€</strong></h4>
-     </div>
-    <span class="icon-reservia star--blue">hhhhh</span>
-  </div>
-  </article>
+				<div class="popular__box">
 
-  <article class="card-water-bedroom card-popular">
-    <img src="images/hebergements/4_small/Au_coeur_de_l'eau.jpg" alt="image Chambres d'hôtes Au cœur de l'eau " class="card-water-bedroom__img card-popular__img">
-    <div class="card__info">
-      <div class="card__text__up">
-        <h3 class="card__title">Au cœur de l'eau Chambres d'hôtes </h3>
-        <h4 class="card__text">Nuit à partir de 71<strong>€</strong></h4>
-      </div>
-    <span class="icon-reservia star--blue">hhhh<span class="icon-reservia star--gray">h</span></span>
-  </div>
-  </article>
+					<a href="#" class="flex popular__a">
+						<article class="card-sun-hostel card-popular">
+							<img src="images/hebergements/4_small//Soleil_du_matin.jpg" alt="image hôtel soleil du matin" class="card-sun-hostel__img card-popular__img">
+							<div class="card__info">
+								<div class="card__text__up">
+								<h3 class="card__title">Hôtel Le soleil du matin</h3>
+								<h4 class="card__text">Nuit à partir de 128<strong>€</strong></h4>
+								</div>
+							<span class="icon-reservia star--blue">hhhhh</span>
+							</div>
+						</article>
+					</a>
 
-  <article class="card-blue-white-hostel card-popular">
-    <img src="images/hebergements/4_small//Tout_bleu_et_blanc.jpg" alt="image Hôtel Tout bleu et Blanc" class="card-blue-white-hostel__img card-popular__img">
-    <div class="card__info">
-       <div class="card__text__up">
-          <h3 class="card__title">Hôtel Tout bleu et Blanc</h3>
-          <h4 class="card__text">Nuit à partir de 68<strong>€</strong></h4>
-      </div>
-    <span class="icon-reservia star--blue">hhhh<span class="icon-reservia star--gray">h</span></span>
-  </div>
-  </article>
-  
-</div>
+					<a href="#" class="flex  popular__a">
+						<article class="card-water-bedroom card-popular">
+							<img src="images/hebergements/4_small/Au_coeur_de_l'eau.jpg" alt="image Chambres d'hôtes Au cœur de l'eau " class="card-water-bedroom__img card-popular__img">
+							<div class="card__info">
+								<div class="card__text__up">
+									<h3 class="card__title">Au cœur de l'eau Chambres d'hôtes </h3>
+									<h4 class="card__text">Nuit à partir de 71<strong>€</strong></h4>
+								</div>
+								<span class="icon-reservia star--blue">hhhh<span class="icon-reservia star--gray">h</span></span>
+							</div>
+						</article>
+					</a>
 
-</section>
+					<a href="#" class="flex  popular__a">
+						<article class="card-blue-white-hostel card-popular">
+							<img src="images/hebergements/4_small//Tout_bleu_et_blanc.jpg" alt="image Hôtel Tout bleu et Blanc" class="card-blue-white-hostel__img card-popular__img">
+							<div class="card__info">
+								<div class="card__text__up">
+									<h3 class="card__title">Hôtel Tout bleu et Blanc</h3>
+									<h4 class="card__text">Nuit à partir de 68<strong>€</strong></h4>
+								</div>
+							<span class="icon-reservia star--blue">hhhh<span class="icon-reservia star--gray">h</span></span>
+							</div>
+						</article>
+					</a>
+				</div>
 
-<!-- =======  SECTION HEBERGEMENT =========-->
+			</section>
 
-<section class="lodging" id="hebergements">
+	<!--=====================================================-->
 
-  <h2 class="title">Hébergements à Marseille</h2>
+			<!--              SECTION HEBERGEMENT                -->
 
-  <div class="card-box">
+	<!--=====================================================-->
 
-  <article class="card-cannebiere lodging-card">
-    <img src="images/hebergements/3_medium/Auberge_la_cannebiere.jpg" alt="image chambre lit superposé" class="card-cannebiere__img card-lodging__img">
-    <div class="card__info">
-      <div class="card__text__up">
-        <h3 class="card__title">Auberge la Cannebière</h3>
-        <h4  class="card__text">Nuit à partir de <strong>25€</strong></h4>
-      </div>
-    <span class="icon-reservia star--blue">hhhh<span class="icon-reservia star--gray">h
-    </span>
-  </span>
-  </div>
-  </article>
+			<section class="lodging" id="hebergements">
 
-  <article class="card-hotel-port lodging-card">
-    <img src="images/hebergements/3_medium/Hôtel_du_port.jpg" alt="image chambre blanche 2 lit séparé" class="card-hotel-port__img card-lodging__img">
-    <div class="card__info">
-      <div class="card__text__up">
-        <h3 class="card__title">Hôtel du port</h3>
-        <h4 class="card__text">Nuit à partir de 50<strong>€</strong></h4>
-      </div>
-      <span class="icon-reservia star--blue">hhhhh</span>
-      </span>
-    </div>
-  </article>
-  
-  <article class="card-mouettes lodging-card">
-    <img src="images/hebergements/3_medium/Hôtel_les_mouettes.jpg" alt="image chambre lit superposé" class="card-mouettes__img card-lodging__img">
-    <div class="card__info">
-      <div class="card__text__up">
-        <h3 class="card__title">Hôtel Les mouettes</h3>
-        <h4 class="card__text">Nuit à partir de 76<strong>€</strong></h4>
-      </div>
-      <span class="icon-reservia star--blue">hhhh<span class="icon-reservia star--gray">h</span></span>
-      </span>
-    </div>
-  </article>
+				<h2 class="title popular__title">Hébergements à Marseille</h2>
 
-  <article class="card-hostel-sea lodging-card">
-    <img src="images/hebergements/3_medium/Hôtel_de_la_mer.jpg" alt="image chambre lit double avec tableau" class="card-hostel-sea__img card-lodging__img">
-    <div class="card__info">
-      <div class="card__text__up">
-        <h3 class="card__title">Hôtel de la mer</h3>
-        <h4 class="card__text">Nuit à partir de 46<strong>€</strong></h4>
-        </div>
-      <span class="icon-reservia star--blue">hhh<span class="icon-reservia star--gray">hh</span></span>
-     </div>
-  </article>
+				<div class="card-box">
+					<a href="#" class="flex lodging__a">
+						<article class="lodging-card card-cannebiere">
+								<img src="images/hebergements/3_medium/Auberge_la_cannebiere.jpg" alt="image chambre lit superposé" class="card-cannebiere__img card-lodging__img">
+								<div class="card__info">
+									<div class="card__text__up">
+										<h3 class="card__title">Auberge la Cannebière</h3>
+										<h4  class="card__text">Nuit à partir de <strong>25€</strong></h4>
+									</div>
+									<span class="icon-reservia star--blue">hhhh
+										<span class="icon-reservia star--gray">h
+										</span>
+									</span>
+								</div>
+						</article>
+					</a>
+					
+					<a href="#" class="flex lodging__a">
+						<article class="lodging-card card-hotel-port">
+								<img src="images/hebergements/3_medium/Hôtel_du_port.jpg" alt="image chambre blanche 2 lit séparé" class="card-hotel-port__img card-lodging__img">
+								<div class="card__info">
+									<div class="card__text__up">
+										<h3 class="card__title">Hôtel du port</h3>
+										<h4 class="card__text">Nuit à partir de 50<strong>€</strong></h4>
+									</div>
+									<span class="icon-reservia star--blue">hhhhh
+									</span>
+								</div>
+						</article>
+					</a>
+						
+					<a href="#" class="flex lodging__a">
+						<article  class="lodging-card card-mouettes">
+								<img src="images/hebergements/3_medium/Hôtel_les_mouettes.jpg" alt="image chambre lit superposé" class="card-mouettes__img card-lodging__img">
+								<div class="card__info">
+									<div class="card__text__up">
+										<h3 class="card__title">Hôtel Les mouettes</h3>
+										<h4 class="card__text">Nuit à partir de 76<strong>€</strong></h4>
+									</div>
+									<span class="icon-reservia star--blue">hhhh
+										<span class="icon-reservia star--gray">h
+										</span>
+									</span>
+								</div>
+						</article>
+					</a>
 
-  <article class="card-panier lodging-card">
-    <img src="images/hebergements/3_medium/Auberge_Le_panier.jpg" alt="image chambre 2 lits superposé en bois typé cabine" class="card-panier__img card-lodging__img">
-    <div class="card__info">
-      <div class="card__text__up">
-        <h3 class="card__title">Auberge de la mer</h3>
-        <h4 class="card__text">Nuit à partir de <strong>23€</strong></h4>
-        </div>
-      <span class="icon-reservia star--blue">hhhh<span class="icon-reservia star--gray">h</span></span>
-    </div>
-  </article>
+					<a href="#" class="flex lodging__a">
+						<article class="lodging-card card-hostel-sea">
+								<img src="images/hebergements/3_medium/Hôtel_de_la_mer.jpg" alt="image chambre lit double avec tableau" class="card-hostel-sea__img card-lodging__img">
+								<div class="card__info">
+									<div class="card__text__up">
+										<h3 class="card__title">Hôtel de la mer</h3>
+										<h4 class="card__text">Nuit à partir de 46<strong>€</strong></h4>
+									</div>
+									<span class="icon-reservia star--blue">hhh
+										<span class="icon-reservia star--gray">hh
+										</span>
+									</span>
+								</div>
+						</article>
+					</a>
 
-  <article class="card-amina lodging-card">
-    <img src="images/hebergements/3_medium/chez_amina.jpg" alt="image chambre lit simple avec bureau et chaise en bois" class="card-amina__img card-lodging__img">
-    <div class="card__info">
-      <div class="card__text__up">
-        <h3 class="card__title">Hôtel chez Amina</h3>
-        <h4 class="card__text">Nuit à partir de 96<strong>€</strong></h4>
-        </div>
-      <span class="icon-reservia star--blue">hhhhh</span>
-    </div>
-  </article>
-</div>
+					<a href="#" class="flex lodging__a">
+						<article class="lodging-card card-panier">
+								<img src="images/hebergements/3_medium/Auberge_Le_panier.jpg" alt="image chambre 2 lits superposé en bois typé cabine" class="card-panier__img card-lodging__img">
+								<div class="card__info">
+									<div class="card__text__up">
+										<h3 class="card__title">Auberge de la mer</h3>
+										<h4 class="card__text">Nuit à partir de <strong>23€</strong></h4>
+									</div>
+									<span class="icon-reservia star--blue">hhhh
+										<span class="icon-reservia star--gray">h
+										</span>
+									</span>
+								</div>
+						</article>
+					</a>
 
-  <a href="#" class="lodging__more">Afficher plus</a>
+					<a href="#" class="flex lodging__a">
+						<article class="lodging-card card-amina">
+								<img src="images/hebergements/3_medium/chez_amina.jpg" alt="image chambre lit simple avec bureau et chaise en bois" class="card-amina__img card-lodging__img">
+								<div class="card__info">
+									<div class="card__text__up">
+										<h3 class="card__title">Hôtel chez Amina</h3>
+										<h4 class="card__text">Nuit à partir de 96<strong>€</strong></h4>
+									</div>
+									<span class="icon-reservia star--blue">hhhhh
+									</span>
+								</div>
+						</article>
+					</a>
+				</div>
 
-</section>
+				<a href="#" class="lodging__more">Afficher plus</a>
 
-</div>
-<!-- Fin de la class="popular-lodging"-->
+			</section>
 
-<!--==========SECTION ACTIVITE =========== -->
+		</div>
+		<!-- Fin de la class="popular-lodging"-->
 
-<section class="activity column" id="activité">
-  <h2 class="title">Activités à Marseilles</h2>
+<!--=====================================================-->
 
-  <!-- === to take all the card in a group ===-->
-<div class="activity-card row">
+	<!--                      SECTION ACTIVITE                   -->
 
-  <!-- ======= NORMAL CARD ========-->
-<aside class="card-old-port activity-card--big column">
-  <img src="images/activites/3_medium/old-port.jpg" alt="image d'un vieux port remplit de bateau, des batiments sont au loin" class="card-old-port__img activity-card__img--big">
-  <div class="card__white-bg">
-  <h3 class="card-old-port__subtitle card__title card__subtitle">Vieux Port</h3>
-</div>
-</aside>
+<!--=====================================================-->
 
-<!-- ======= DOUBLE CARD A ========-->
-<div class="activity__double-card-a column">
-<aside class="activity-card--small card-pomegues">
-  <img src="images/activites/4_small/fort-pomegues.jpg" alt="image du fort pomègues" class="activity-card__img--small card-pomegues__img">
-  <div class="card__white-bg">
-  <h3 class="card__title card-pomegues__subtitle card__subtitle">Fort de pomeguès</h3>
-  </div>
-</aside>
+		<section class="activity column" id="activité">
+			<h2 class="title">Activités à Marseilles</h2>
 
-<aside class="activity-card--small card-frioul-island column">
-  <img src="images/activites/4_small/frioul-island.jpg" alt="image de l'île du Frioul" class="activity-card__img--small card-frioul-island__img">
-  <div class="card__white-bg">
-  <h3 class="card__title card-frioul-island__subtitle card__subtitle">Îles du Frioul</h3>
-  </div>
-</aside>
-</div>
+		<!-- === to take all the card in a group ===-->
+			<div class="activity__box">
 
-<!-- ======= NORMAL CARD ========-->
-<aside class="activity-card--big card-calanques column">
-  <img src="images/activites/4_small/parc-national-calanques.jpg" alt="image du parc national des Calanques" class="activity-card__img--big card-calanques__img">
-  <div class="card__white-bg">
-  <h3 class="card__title card-calanques__subtitle card__subtitle">Parc National des Calanques</h3>
-  </div>
-</aside>
+					<!-- ======= NORMAL CARD ========-->
+					<a href="#" class="activity__a solo">
+						<article class="activity__card  column place  border img__a">
+							<h3 class="card__title card__subtitle">Vieux Port</h3>
+						</article>
+					</a>	
 
-<!-- ======= DOUBLE CARD B ========-->
-<div class="activity__double-card-b column">
-<aside class="activity-card--small card-notre-dame column">
-  <img src="images/activites/4_small/notre-dame-de-la-garde.jpg" alt="image de Notre-Dame-de-la-Garde" class="activity-card__img--small card-notre-dame__img">
-  <div class="card__white-bg">
-  <h3 class="card__title card-notre-dame__subtitle card__subtitle">Notre-Dame-de-la-Garde</h3>
-  </div>
-</aside>
+					<!-- ======= DOUBLE CARD A ========-->
+					<div class="activity__a double">
+						<a href="#" class="activity__card--bigger">
+							<article class="activity__card img__b border">
+									<h3 class="card__title  card__subtitle">Fort de pomeguès</h3>
+							</article>
+						</a>
 
-<aside class="activity-card--small card-longchamp column">
-  <img src="images/activites/4_small/parc-longchamp.jpg" alt="image du parc de Longchamp" class="activity-card__img--small card-longchamp__img">
-  <div class="card__white-bg">
-  <h3 class="card__title card-longchamp__subtitle card__subtitle">Parc Longchamp</h3>
-  </div>
-</aside>
-</div>
+						<a href="#" class="activity__card--smaller">
+							<article class="activity__card img__c border">
+									<h3 class="card__title card__subtitle">Îles du Frioul</h3>
+							</article>
+						</a>
+					</div>
 
-</div>
+					<!-- ======= NORMAL CARD ========-->
+					<a href="#" class="activity__a solo">
+						<article class="activity__card  img__d border">
+								<h3 class="card__title card__subtitle">Parc National des Calanques</h3>
+						</article>
+					</a>
 
-</section>
-</div>
-<!-- =============== FOOTER =============-->
+					<!-- ======= DOUBLE CARD B ========-->
+					<div class="activity__a double">
+					<a href="#" class="activity__card--even flex">
+						<article class="activity__card img__e border">
+								<h3 class="card__title card__subtitle">Notre-Dame-de-la-Garde</h3>
+						</article>
+					</a>
 
-<footer class="footer">
-    <dl>
-      <dt> A propos</dt>
-      <dd><a href="#"> Fonctionnement du site</a></dd>
-      <dd><a href="#">Conditions générales de vente</a></dd>
-      <dd><a href="#">Données et confidentialité</a></dd>
-    </dl>
-    <dl>
-      <dt>Nos hébergements</dt>
-      <dd><a href="#">Charte de qualité</a></dd>
-      <dd><a href="#">Soumettre votre hôtel</a></dd>
-    </dl>
-    <dl>
-      <dt>Assistance</dt>
-      <dd><a href="#">Centre d'aide</a></dd>
-      <dd><a href="#">Nous contacter</a></dd>
-    </dl>
+					<a href="#" class="activity__card--even flex">
+						<article class="activity__card  img__f border">
+								<h3 class="card__title card__subtitle">Parc Longchamp</h3>
+						</article>
+					</a>
+				</div>
+
+			</div>
+
+		</section>
+	</main>
+	</div>
+<!--=====================================================-->
+
+	<!-- 				 FOOTER 					-->
+
+<!--=====================================================-->
+
+<footer class="footer__box">
+	<div class="footer">
+		<div class="footer__bloc">
+				<h3> A propos</h3>
+				<ul>
+					<li><a href="#"> Fonctionnement du site</a></li>
+					<li><a href="#">Conditions générales de vente</a></li>
+					<li><a href="#">Données et confidentialité</a></li>
+				</ul>
+		</div>
+		<div class="footer__bloc">
+				<h3>Nos hébergements</h3>
+				<ul>
+					<li><a href="#">Charte de qualité</a></li>
+					<li><a href="#">Soumettre votre hôtel</a></li>
+				</ul>
+		</div>
+		<div class="footer__bloc">
+				<h3>Assistance</h3>
+				<ul>
+					<li><a href="#">Centre d'aide</a></li>
+					<li><a href="#">Nous contacter</a></li>
+				</ul>
+		</div>
+	</div>
 </footer>
   
 </body>
